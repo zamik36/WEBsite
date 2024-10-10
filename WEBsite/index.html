@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang = "ru">
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+        <title>Kollinas</title>
+        <link rel = "stylesheet" href = "slyles.css">
+        <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="image/kotik.png">
+    </head>
+    <body class = "body">
+        <header>
+            <nav class = "navbar">
+                </div class = "container">
+                    <div id = "logotip" onclick = "slowscroll('#top')">
+                        <span>Kollinas</span>
+                    </div>
+                    <div class = "navbar-wrap">
+                        <ul class="navbar-menu">
+                            <li><a href="#" title = "Главная" onclick="slowscroll('#main')">Главная</a></li>
+                            <li><a href="#" title = "Портфолио" onclick = "slowscroll('#portfolio')">Портфолио</a></li>
+                            <li><a href="catalog.html" title = "Каталог">Каталог</a></li>
+                            <li><a href="#" title = "обратная связь" onclick = "slowscroll('#contacts')">Обратная связь</a></li>
+                            <li><a href="#" title = "Об авторе" onclick = "slowscroll('#author')">Об авторе</a></li>
+                            <li> <a href="Registration.html" title = "Регистрация"> Регистрация </a></li>
+                            <li> <a href="admin.php" title = "Панель администратора"> Панель администратора </a></li>
+                        </ul>
+                    </div>
+                    <div class = "profile"> 
+                            
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="top">
+            <h1>Создаем шедевры</h1>
+            <h3>для вас!</h3>
+        </div>
+        <div id="main">
+            <div class="intro">
+              <h2>Наши услуги помогут вам!</h2>
+              <span>Большой выбор всего, что может вам пригодиться</span>
+            </div>
+            <div class="text">
+              <span>Привет! Я - профессиональный дизайнер, специализирующийся на создании логотипов, фирменного стиля, упаковки и многое другое. Моя цель - помочь вашему бренду выделиться среди конкурентов и запомниться вашим клиентам. У меня большой опыт работы с различными компаниями и брендами, и я готов воплотить любые ваши идеи в жизнь. Обращайтесь ко мне, и вместе мы создадим уникальный и стильный облик для вашего бизнеса!</span>
+            </div>
+          </div>
+        
+          <div id="portfolio">
+            <h2>Портфолио</h2>
+            <h4>примеры работ</h4>
+        
+            <div class="img">
+              <img src="image/photo1.jpg" alt="">
+              <span>Кастом (текстиль, кожа, холст и т.д.) вещей</span>
+            </div>
+            <div class="img">
+              <img src="image/pgoto2.jpg" alt="">
+              <span>Картины на любой вкус</span>
+            </div>
+          </div>
+
+          <div id="contacts">
+            <h5>Обратная связь</h5>
+            <form id="form_input">
+              <label for="name">Имя <span>*</span></label><br>
+              <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+              <label for="email">Ваша почта <span>*</span></label><br>
+                <input type="email" placeholder="Введите email" name="email" id="email"><br>
+                <label for="message">Сообщение <span>*</span></label><br>
+                <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+                <div id="mess_send" class="btn">Отправить</div>
+            </form>
+          <div>   
+            
+            
+    
+          <div id="author">
+            <h2>Немного</h2>
+            <h4>об авторе</h4>
+            <div class = "wrap">
+              <div class = "img">
+                <img src = "image/photo_2023-06-12_23-15-05.jpg" alt = "">
+              </div>
+              <div class = "text">
+                <span>Сайт был разработан Заметаевым Ильей Сергеевичев, студентом 1 курса ВГУ направления "Программная инженерия". Мои контакты прилагаю ниже.</span>
+              </div> 
+          </div>
+
+
+          <div id = "last">
+            <a href = "https://vk.com/ilyshka068">
+              <img src = "image/pngwing.com.png" alt = "">
+            </a>
+            <a href = "mailto:ilyxaz68@mail.ru">
+              <img src = "image/378167-mayl-27.jpg" alt = "">
+            </a>
+          </div>
+           
+        
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script>
+            function slowscroll(id) {
+              $('html, body').animate({
+                scrollTop: $(id).offset().top
+              }, 500);
+            }
+        
+            $(document).on("scroll", function () {
+              if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+              else
+                $("header").attr("class", "fixed");
+            });
+          </script>
+    </body>
+
+
+
+</html>

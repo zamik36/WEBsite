@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Monoton&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Monoton&family=Righteous&family=Rubik+Glitch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #000;
+    
+}
+
+header span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Rowdies', serif;
+}
+
+header  span a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Rowdies', serif;
+}
+
+
+header  a:hover {
+    color: #6d6868;
+}
+
+
+body {
+    min-height: 100vh;
+    background-image: url(image/photo_2024-03-20_21-26-55.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+    
+}
+
+.wrapper .remember {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+
+}
+
+.remember label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.remember a {
+    padding-left: 70px;
+    color: #fff;
+    text-decoration: none;
+}
+.remember a:hover {
+    text-decoration: none;
+    color:#c4c2c2;
+}
+.wrapper .button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.register-link p a:hover{
+    text-decoration: none;
+    color: #e1d9d9;
+}
+
+

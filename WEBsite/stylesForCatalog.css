@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Monoton&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Monoton&family=Righteous&family=Rubik+Glitch&display=swap');
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card {
+    width: 250px;
+    height: 100%;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 100px;
+    left: 300px;
+}
+
+.card:hover {
+    box-shadow: 4px 8px 16px rgba(225, 102, 51, 0.2);
+}
+
+.card-top {
+    flex: 0 0 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.2s;
+}
+
+.card-image:hover > img  {
+    transform: scale(1.1);
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+.card-price {
+    display: flex;
+    margin-bottom: 10px;
+    flex: 0 0 50%;
+    justify-content: center;
+}
+
+.card-price-discount {
+    font-weight: 700;
+    font-size: 19px;
+    color: #414141;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+}
+
+.card-title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color:#000000;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.card-title:hover {
+    color:#81817c;
+    
+}
+
+.card_add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #14330c;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: auto
+}
+
+.card-add:hover {
+    border: 1px solid #ff6633;
+    background-color: #ff6633;
+    color: #fff;
+
+}
+
+header {
+    width: 100%;
+    
+    background: transparent;
+    
+    position: fixed;
+    font-family: 'Rowdies';
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.navbar .container{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-right: 100px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar-menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #060606;
+    font-size: 26px;
+    word-spacing: 0px;
+}
+
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 26em;
+    word-spacing: 40px;
+}    
+
+.navbar-menu li a:hover {
+    opacity: 1;
+}
+
+header #logotip span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Rowdies', serif;
+}
+header #logotip span a {
+    text-decoration: none;
+}
+
+header #logotip {
+    cursor: pointer;
+    color: #0b0a0a;
+    
+}
+
+header #logotip span:hover {
+    color: #6d6868;
+}
+
+.navbar a {
+    color: #040404;
+}
+
+.navbar a:hover {
+    color: #7b7878;
+}
+
+
+.fixed {
+    z-index: 5000;
+    background-color: #ffffff;
+    border-bottom: 1px solid silver;
+    font-family: 'Rowdies';
+    height: 50px;
+}
+
+header.fixed #logo span:hover {
+    color: #050505;
+}
+
+.fixed .navbar a {
+    color: #050505;
+}
+
+.fixed .navbar a:hover {
+    color: #040404;
+}
+
+
+.fixed #logotip span {
+    color:#4f4b4b;
+}
+
+.fixed #logotip span:hover {
+    color: #040404
+}
+
+.cart-container {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.cart-container.visible {
+    display: block;
+}
+
+.cart-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-list li {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item-title {
+    flex: 1;
+    font-weight: bold;
+}
+
+.cart-item-price {
+    color: #888;
+}
+
+.clear-cart-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.clear-cart-button:hover {
+    background-color: darkred;
+}

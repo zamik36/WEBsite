@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Каталог</title>
+    <link rel = "stylesheet" href = "stylesForCatalog.css">
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+        </div class = "container">
+            <div id = "logotip" onclick = "slowscroll('#top')">
+                <span><a href = "index.html">Kollinas</a></span>
+            </div>
+            <div class = "navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#" title = "Главная" onclick="slowscroll('#main')">Главная</a></li>
+                    <li><a href="#" title = "Портфолио" onclick = "slowscroll('#portfolio')">Портфолио</a></li>
+                    <li><a href="catalog.html" title = "Каталог">Каталог</a></li>
+                    <li><a href="#" title = "обратная связь" onclick = "slowscroll('#contacts')">Обратная связь</a></li>
+                    <li><a href="#" title = "Об авторе" onclick = "slowscroll('#author')">Об авторе</a></li>
+                    <li>
+                        <a href="#" title="Корзина" class="cart-hover"> 
+                            <img width="30" height="30" src="https://img.icons8.com/ios/50/shopping-bag--v1.png" alt="shopping-bag--v1"/>
+                            <span class="cart-counter">0</span>
+                        </a>
+                    </li>
+                   
+                    
+            </div>
+        </div>
+    </nav>
+        
+    </header>
+    <div class="cart-container">
+        <ul class="cart-list">
+            <!-- Каждый товар в корзине имеет отдельные элементы для названия и цены -->
+            <li>
+                <div class="cart-item-details">
+                    <span class="cart-item-title">Название товара</span>
+                    <span class="cart-item-price">Цена</span>
+                </div>
+            </li>
+            <!-- Дополнительные товары могут добавляться здесь -->
+        </ul>
+        <!-- Строка для вывода суммы цен всех товаров -->
+        <div id="total-price"></div>
+    </div>
+    <button class="clear-cart-button">Очистить корзину</button>
+    
+    <body>
+        <div class="card">
+            <div class="card-top">
+                <a href = "#" class = "card-image">
+                    <img src = "image/pgoto2.jpg" alt = "Рисунок кистью на холсте"/>    
+                </a>
+
+            </div>
+            
+            <div class="card-bottom"> 
+                <div class="card-price">
+                    <div class = "card-price-discount">4500</div>
+                    <div class="price"> &#8381</div>
+                </div>
+
+            </div>
+
+            <a href = "#" class = "card-title">
+                Рисунок кистью на холсте
+            </a>
+
+            <button data-card class = "card_add">В корзину </button>
+        </div>
+        <div class="card">
+            <div class="card-top">
+                <a href = "#" class = "card-image">
+                    <img src = "image/photo1.jpg" alt = "Роспись на текстиле"/>
+                </a>
+
+            </div>
+
+
+            <div class="card-bottom">
+                <div class="card-price">
+                    <div class="card-price-discount">3000</div>
+                    <div class="price"> &#8381</div>
+                </div>
+            </div>
+
+            <a href = "#" class = "card-title">
+                Роспись на текстиле
+            </a>
+
+            <button data-card class = "card_add"> В корзину</button>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+
+</body>
+</html>
